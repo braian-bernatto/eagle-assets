@@ -1,0 +1,177 @@
+.center-flex {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.center-flex img {
+  height: 430px;
+  width: 100%;
+  object-fit: cover;
+}
+
+.pricing-table {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  gap: 50px;
+}
+
+@media (max-width: 375px) {
+  .pricing-table {
+    gap: 20px;
+    align-items: center;
+  }
+}
+
+@media (max-width: 1200px) {
+  .pricing-table .plan.plan-featured {
+    transform: scale(1);
+  }
+}
+
+.pricing-table .plan {
+  width: 350px;
+}
+
+.player-card {
+  height: 400px;
+  width: 285px;
+  position: relative;
+  transition: transform 0.2s;
+  cursor: pointer;
+}
+
+.player-card img {
+  height: 100%;
+}
+
+.player-card:hover {
+  transform: scale(1.1);
+}
+
+.player-name {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  font-size: 20px;
+  font-weight: 500;
+  color: white;
+  text-align: center;
+  width: 100%;
+  padding: 0 20px;
+  text-transform: uppercase;
+  padding: 0 31px;
+  z-index: 10;
+}
+
+.player-name::before {
+  content: '';
+  position: absolute;
+  bottom: 5px;
+  width: 50%;
+  left: 0;
+  transform: translateX(50%);
+  border-bottom: 1px solid white;
+}
+
+.player-name::after {
+  content: '';
+  position: absolute;
+  bottom: -115%;
+  width: 30%;
+  left: 0;
+  transform: translateX(117%) rotate(-90deg);
+  border-bottom: 1px solid white;
+}
+
+.player-image {
+  position: absolute;
+  top: 37px;
+  width: 57%;
+  height: 171px;
+  right: 40px;
+  z-index: 5;
+}
+
+.player-image img {
+  object-fit: scale-down;
+}
+
+.player-country {
+  position: absolute;
+  top: 115px;
+  width: 50px;
+  left: 50px;
+  z-index: 10;
+}
+
+.player-club {
+  position: absolute;
+  top: 155px;
+  width: 50px;
+  left: 50px;
+  z-index: 10;
+}
+
+.player-height {
+  position: absolute;
+  top: 250px;
+  width: 70px;
+  left: 64px;
+  font-size: 20px;
+  font-weight: 400;
+  color: white;
+  text-align: center;
+}
+
+.player-weight {
+  position: absolute;
+  top: 250px;
+  width: 70px;
+  right: 64px;
+  font-size: 20px;
+  font-weight: 400;
+  color: white;
+  text-align: center;
+}
+
+.player-position {
+  position: absolute;
+  top: 80px;
+  width: 50px;
+  left: 50px;
+  font-size: 30px;
+  line-height: 18px;
+  font-weight: 400;
+  color: white;
+  text-align: center;
+}
+
+.player-birth {
+  position: absolute;
+  top: 290px;
+  width: 70px;
+  right: 64px;
+  font-size: 16px;
+  font-weight: 400;
+  color: white;
+  text-align: center;
+}
+
+.player-youtube {
+  position: absolute;
+  top: 290px;
+  width: 50px;
+  left: 64px;
+  font-size: 20px;
+  font-weight: 400;
+  text-align: center;
+}
+
+.owl-item {
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+}
