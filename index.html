@@ -69,7 +69,11 @@
     <!-- Head Libs -->
     <script src="vendor/modernizr/modernizr.min.js"></script>
   </head>
-  <body data-plugin-page-transition>
+  <body
+    data-plugin-page-transition
+    data-plugin-scroll-spy
+    data-plugin-options="{'target': '#header'}"
+  >
     <div class="body">
       <header
         id="header"
@@ -181,7 +185,7 @@
                               data-hash
                               data-hash-offset="0"
                               data-hash-offset-lg="70"
-                              href="index.html"
+                              href="#inicio"
                             >
                               Inicio
                             </a>
@@ -293,6 +297,7 @@
 
       <div role="main" class="main">
         <section
+          id="inicio"
           class="border-0 video overlay overlay-show section section-angled overlay overlay-show overlay-op-9 border-0 position-relative z-index-0 vh-100 m-0"
           data-video-path="home"
           data-plugin-video-background
