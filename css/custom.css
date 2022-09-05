@@ -44,7 +44,7 @@
 .center-flex img {
   height: 430px;
   width: 100%;
-  object-fit: contain;
+  object-fit: cover;
 }
 
 .soccer-field {
