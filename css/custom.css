@@ -10,6 +10,7 @@
 .player-photo {
   border-radius: 0.5rem;
   overflow: hidden;
+  min-width: 300px;
   box-shadow: var(--shadow-blue);
 }
 
