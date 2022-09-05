@@ -1,3 +1,40 @@
+.rounded-pill {
+  border-radius: 5rem !important;
+}
+
+.shadow-1 {
+  border-radius: 0.5rem;
+  overflow: hidden;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.youtube {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.youtube iframe {
+  border: 5px solid;
+  border-radius: 1rem;
+  box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+}
+
+@media (max-width: 375px) {
+  .youtube iframe {
+    width: 350px;
+  }
+}
+
+@media (max-width: 767px) {
+  .youtube iframe {
+    width: 100%;
+  }
+}
+
 .center-flex {
   display: flex;
   width: 100%;
@@ -9,6 +46,50 @@
   height: 430px;
   width: 100%;
   object-fit: cover;
+}
+
+.soccer-field {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.soccer-field img {
+  height: 200px;
+  width: 200px;
+  object-fit: fill;
+}
+
+.soccer-field span {
+  height: 200px;
+  width: 200px;
+  position: relative;
+}
+
+.pulse::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 20px;
+  height: 20px;
+  border-radius: 100%;
+  background: #d86a05;
+  animation: pulse 1500ms infinite;
+}
+@keyframes pulse {
+  0% {
+    box-shadow: 0 0 0 0 #d86a05;
+  }
+  100% {
+    box-shadow: 0 0 0 17px #fbb32f01;
+  }
+}
+
+.pulse.delantero::after {
+  top: 40px;
+  left: 120px;
 }
 
 .pricing-table {
