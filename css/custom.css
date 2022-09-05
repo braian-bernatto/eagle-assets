@@ -1,6 +1,24 @@
 :root {
   --shadow-blue: rgb(38, 57, 77) 0px 20px 30px -10px;
   --drop-shadow: drop-shadow(0.35rem 0.35rem 0.4rem rgba(0, 0, 0, 0.5));
+  --orange: #d86a05;
+}
+
+.tooltip {
+  border-radius: 25px;
+  overflow: hidden;
+}
+
+.tooltip .tooltip-inner {
+  background: var(--orange);
+  color: #fff;
+  max-width: 500px;
+}
+
+.tooltip-arrow::after,
+.tooltip-arrow::before {
+  border-top-color: var(--orange) !important;
+  border-bottom-color: var(--orange) !important;
 }
 
 .rounded-pill {
