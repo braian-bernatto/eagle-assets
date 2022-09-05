@@ -1,3 +1,8 @@
+:root {
+  --shadow-blue: rgb(38, 57, 77) 0px 20px 30px -10px;
+  --drop-shadow: drop-shadow(0.35rem 0.35rem 0.4rem rgba(0, 0, 0, 0.5));
+}
+
 .rounded-pill {
   border-radius: 5rem !important;
 }
@@ -5,7 +10,7 @@
 .player-photo {
   border-radius: 0.5rem;
   overflow: hidden;
-  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+  box-shadow: var(--shadow-blue);
 }
 
 .youtube {
@@ -18,7 +23,7 @@
 .youtube iframe {
   border: 5px solid;
   border-radius: 1rem;
-  box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+  box-shadow: var(--shadow-blue);
 }
 
 @media (max-width: 375px) {
@@ -55,14 +60,15 @@
 }
 
 .soccer-field img {
-  height: 200px;
-  width: 200px;
+  height: 350px;
+  width: 350px;
   object-fit: fill;
+  filter: var(--drop-shadow);
 }
 
 .soccer-field span {
-  height: 200px;
-  width: 200px;
+  height: 350px;
+  width: 350px;
   position: relative;
 }
 
@@ -71,24 +77,25 @@
   position: absolute;
   top: 0;
   left: 0;
-  width: 20px;
-  height: 20px;
+  width: 30px;
+  height: 30px;
   border-radius: 100%;
   background: #d86a05;
   animation: pulse 1500ms infinite;
+  filter: var(--drop-shadow);
 }
 @keyframes pulse {
   0% {
     box-shadow: 0 0 0 0 #d86a05;
   }
   100% {
-    box-shadow: 0 0 0 17px #fbb32f01;
+    box-shadow: 0 0 0 30px #fbb32f01;
   }
 }
 
 .pulse.delantero::after {
-  top: 40px;
-  left: 120px;
+  top: 90px;
+  left: 230px;
 }
 
 .pricing-table {
