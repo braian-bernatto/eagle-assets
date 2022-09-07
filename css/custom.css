@@ -123,14 +123,14 @@
 
 .soccer-field img {
   height: 350px;
-  width: 350px;
-  object-fit: fill;
+  width: 235px;
+  object-fit: cover;
   filter: var(--drop-shadow);
 }
 
 .soccer-field span {
   height: 350px;
-  width: 350px;
+  width: 235px;
   position: relative;
 }
 
@@ -161,7 +161,7 @@
 
 .pulse.delantero::after {
   top: 90px;
-  left: 230px;
+  left: 170px;
 }
 
 .pricing-table {
