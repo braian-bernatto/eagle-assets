@@ -9,11 +9,12 @@
   cursor: help;
   position: relative;
   text-align: center;
+  display: flex;
+  justify-content: center;
 }
 /*== common styles for both parts of tool tip ==*/
 .tool::before,
 .tool::after {
-  left: 50%;
   opacity: 0;
   position: absolute;
   z-index: -100;
@@ -35,7 +36,6 @@
   border-color: var(--orange) transparent transparent transparent;
   bottom: 100%;
   content: '';
-  margin-left: -0.5em;
   transition: all 0.65s cubic-bezier(0.84, -0.18, 0.31, 1.26),
     opacity 0.65s 0.5s;
   transform: scale(0.6) translateY(-90%);
@@ -54,11 +54,9 @@
   color: #edeff0;
   content: attr(data-tip);
   font-size: 1rem;
-  margin-left: -8.75em;
   padding: 0.4em 20px;
   transition: all 0.65s cubic-bezier(0.84, -0.18, 0.31, 1.26) 0.2s;
   transform: scale(0.6) translateY(50%);
-  width: 17.5em;
 }
 
 .tool:hover::after,
