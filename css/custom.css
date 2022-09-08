@@ -11,6 +11,7 @@
   text-align: center;
   display: flex;
   justify-content: center;
+  filter: var(--drop-shadow);
 }
 /*== common styles for both parts of tool tip ==*/
 .tool::before,
@@ -125,7 +126,6 @@
   height: 350px;
   width: 235px;
   object-fit: cover;
-  filter: var(--drop-shadow);
 }
 
 .soccer-field span {
@@ -162,6 +162,11 @@
 .pulse.delantero::after {
   top: 90px;
   left: 170px;
+}
+
+.pulse.defensa-central::after {
+  top: 220px;
+  left: 102px;
 }
 
 .pricing-table {
