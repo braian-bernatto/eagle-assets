@@ -159,15 +159,86 @@
   }
 }
 
-.pulse.delantero::after {
-  top: 90px;
-  left: 170px;
+.pulse.arquero::after {
+}
+
+.pulse.central::after {
 }
 
 .pulse.defensa-central::after {
   top: 220px;
   left: 102px;
 }
+
+.pulse.delantero::after {
+  top: 90px;
+  left: 170px;
+}
+
+.pulse.delantero-izquierdo::after {
+}
+
+.pulse.enganche::after {
+}
+
+.pulse.extremo::after {
+}
+
+.pulse.extremo-derecho::after {
+}
+
+.pulse.extremo-izquierdo::after {
+}
+
+.pulse.interior-derecha::after {
+}
+
+.pulse.lateral-derecho::after {
+}
+
+.pulse.lateral-izquierdo::after {
+}
+
+.pulse.media-punta::after {
+}
+
+.pulse.media punta / volante::after {
+}"
+".pulse.medio - extremo::after {
+}"
+".pulse.medio campista::after {
+}"
+".pulse.mediocampista::after {
+}"
+".pulse.volante::after {
+}"
+".pulse.volante - delantero::after {
+}"
+".pulse.volante central::after {
+}"
+".pulse.volante central / saguero::after {
+}"
+".pulse.volante derecha::after {
+}"
+".pulse.volante derecho::after {
+}"
+".pulse.volante izq::after {
+}"
+".pulse.volante izquierdo::after {
+}"
+".pulse.volante lateral::after {
+}"
+".pulse.volante mixto::after {
+}"
+".pulse.volante por izq::after {
+}"
+".pulse.volante por izquierda::after {
+}"
+".pulse.volante/lateral::after {
+}"
+".pulse.zaguero central::after {
+}"
+
 
 .pricing-table {
   display: flex;
