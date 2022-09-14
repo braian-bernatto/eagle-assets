@@ -4,6 +4,10 @@
   --orange: #d86a05;
 }
 
+.bg-eagle {
+  background-color: var(--orange);
+}
+
 .team-logo {
   position: absolute;
   bottom: -40px;
