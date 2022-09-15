@@ -176,14 +176,14 @@
   object-fit: cover;
 }
 
-.soccer-field span {
+.soccer-field .field {
   height: 350px;
   width: 235px;
   position: relative;
 }
 
 .pulse {
-  position: relative;
+  position: absolute;
 }
 
 .pulse::after {
