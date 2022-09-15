@@ -668,105 +668,44 @@
   box-shadow: 40vmin 0 5.79918916043943vmin currentColor;
 }
 
-@property --percentage {
-  syntax: '<integer>';
-  initial-value: 0;
-  inherits: false;
-}
-
-.counter {
-  animation: counter 5s ease-out;
-  animation-fill-mode: forwards;
-  counter-reset: num var(--percentage);
-}
-.counter::after {
-  content: counter(num) '%';
-}
-
-@keyframes counter {
-  from {
-    --percentage: 0;
-  }
-  to {
-    --percentage: var(--counter-end);
-  }
-}
-
-.percentage-chart {
-  width: 130px;
-  height: 130px;
-  position: relative;
-}
-.percentage-chart-bg {
-  fill: none;
-  stroke: #a1a1a185;
-  stroke-width: 3;
-}
-
-.percentage-chart-stroke {
-  fill: none;
-  stroke-width: 3;
-  stroke: var(--blue-light);
-  stroke-linecap: round;
-  animation: progress 5s ease-out forwards;
-}
-
-.counter {
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  font-size: 40px;
-  color: var(--blue-light);
-  transform: translate3d(-50%, -50%, 0);
-}
-
-@keyframes progress {
-  0% {
-    stroke-dasharray: 0 100;
-  }
-}
-
-.time-breakdown {
+.flex-wrapper {
   display: flex;
-  align-items: center;
-  justify-content: left;
-  gap: 10px;
-  flex-wrap: wrap;
-}
-
-.time-breakdown-chart {
-  display: flex;
-}
-.time-breakdown-chart p {
-  margin: 6px 0 0 0;
-  color: #909090;
-  font-size: 14px;
-}
-.time-breakdown-chart h4 {
-  margin: 0;
-  color: #a1a1a185;
-  font-size: 18px;
-  font-weight: normal;
-}
-
-.percentage-chart-meeting .percentage-chart-stroke {
-  stroke: var(--blue-light);
-}
-.percentage-chart-distraction .percentage-chart-stroke {
-  stroke: var(--blue-light);
-}
-
-.percentage-chart-meeting .counter {
-  color: var(--blue-light);
-}
-
-.percentage-chart-distraction .counter {
-  color: var(--blue-light);
-}
-
-.chart-info {
-  display: flex;
-  flex-direction: column;
+  flex-flow: row wrap;
   justify-content: center;
-  margin-left: 16px;
+  align-items: center;
+}
+
+.single-chart {
+  width: 150px;
+  min-width: 100px;
+  justify-content: center;
+  align-items: center;
+}
+
+.circular-chart {
+  display: block;
+  margin: 10px auto;
+  max-width: 80%;
+  max-height: 250px;
+}
+
+.circle-bg {
+  fill: none;
+  stroke: #eee;
+  stroke-width: 3.8;
+}
+
+.circle {
+  fill: none;
+  stroke-width: 2.8;
+  stroke-linecap: round;
+  animation: progress 1s ease-out forwards;
+  stroke: var(--blue-light);
+}
+
+.percentage {
+  fill: #666;
+  font-family: sans-serif;
+  font-size: 0.5em;
+  text-anchor: middle;
 }
