@@ -213,17 +213,17 @@
 }
 
 .pulse.central::after {
-  top: 159px;
+  top: 250px;
   left: 102px;
 }
 
 .pulse.defensa::after {
-  top: 220px;
+  top: 250px;
   left: 102px;
 }
 
 .pulse.delantero::after {
-  top: 90px;
+  top: 45px;
   left: 102px;
 }
 
@@ -238,37 +238,42 @@
 }
 
 .pulse.enganche::after {
-  top: 130px;
+  top: 95px;
   left: 102px;
 }
 
 .pulse.extremo-derecho::after {
-  top: 90px;
-  left: 170px;
+  top: 97px;
+  left: 180px;
 }
 
 .pulse.extremo-izquierdo::after {
-  top: 90px;
-  left: 32px;
+  top: 97px;
+  left: 24px;
 }
 
 .pulse.interior-derecho::after {
-  top: 190px;
-  left: 170px;
+  top: 140px;
+  left: 150px;
+}
+
+.pulse.interior-izquierdo::after {
+  top: 140px;
+  left: 54px;
 }
 
 .pulse.lateral-derecho::after {
-  top: 200px;
+  top: 250px;
   left: 180px;
 }
 
 .pulse.lateral-izquierdo::after {
-  top: 200px;
+  top: 250px;
   left: 24px;
 }
 
 .pulse.media-punta::after {
-  top: 130px;
+  top: 110px;
   left: 102px;
 }
 
@@ -277,19 +282,29 @@
   left: 102px;
 }
 
+.pulse.volante::after {
+  top: 159px;
+  left: 102px;
+}
+
 .pulse.volante-central::after {
-  top: 115px;
+  top: 159px;
   left: 102px;
 }
 
 .pulse.volante-derecho::after {
-  top: 115px;
-  left: 170px;
+  top: 160px;
+  left: 184px;
 }
 
 .pulse.volante-izquierdo::after {
-  top: 115px;
-  left: 32px;
+  top: 160px;
+  left: 20px;
+}
+
+.pulse.zaguero::after {
+  top: 250px;
+  left: 102px;
 }
 
 .pricing-table {
